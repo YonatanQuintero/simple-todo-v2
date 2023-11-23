@@ -1,3 +1,47 @@
+Exercise 2: Enhanced Todo App with Context, Reducers, and Local Storage
+
+Overview:
+
+Enhance the basic todo list application by introducing context for theme management, reducers for global state management, and local storage for persistent data storage. This exercise will demonstrate how to combine these techniques to create a more sophisticated and feature-rich application.
+
+Objectives:
+
+Implement a ThemeContext to manage the application's light and dark themes.
+
+Utilize reducers to handle state updates for adding, removing, and toggling the completion status of todo items.
+
+Employ local storage to persist todo data across page refreshes and application restarts.
+
+Implementation:
+
+Create a ThemeContext using React.createContext() and define a ThemeProvider component to expose the theme context.
+
+Implement reducers using useReducer() to manage the todo list state.
+
+Use the ThemeContext and reducers within components to handle theme changes and todo item updates.
+
+Utilize local storage to store and retrieve todo data using localStorage API.
+
+Benefits:
+
+Improved code organization and separation of concerns using context, reducers, and local storage.
+
+Enhanced user experience with a customizable theme.
+
+Persistent data storage for maintaining todo lists across sessions.
+
+Insights:
+
+Context provides a centralized approach to managing global state, such as the application theme.
+
+Reducers facilitate efficient state updates and ensure predictable state changes.
+
+Local storage enables persistent data storage, preserving user data even after application reloads.
+
+Demonstration:
+
+Develop the enhanced todo application, incorporating context for theme management, reducers for global state management, and local storage for persistent data storage. Showcase the ability to change themes, add, remove, and toggle todo items, and maintain the todo list across page refreshes.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

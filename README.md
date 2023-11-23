@@ -1,47 +1,37 @@
-Exercise 2: Enhanced Todo App with Context, Reducers, and Local Storage
+**Exercise 2: Enhanced Todo App with Context, Reducers, and Local Storage**
 
-Overview:
+**Overview:**
 
 Enhance the basic todo list application by introducing context for theme management, reducers for global state management, and local storage for persistent data storage. This exercise will demonstrate how to combine these techniques to create a more sophisticated and feature-rich application.
 
-Objectives:
+**Objectives:**
 
-Implement a ThemeContext to manage the application's light and dark themes.
+1. Implement a ThemeContext to manage the application's light and dark themes.
+2. Utilize reducers to handle state updates for adding, removing, and toggling the completion status of todo items.
+3. Employ local storage to persist todo data across page refreshes and application restarts.
 
-Utilize reducers to handle state updates for adding, removing, and toggling the completion status of todo items.
+**Implementation:**
 
-Employ local storage to persist todo data across page refreshes and application restarts.
+1. Create a ThemeContext using `React.createContext()` and define a ThemeProvider component to expose the theme context.
+2. Implement reducers using `useReducer()` to manage the todo list state.
+3. Use the ThemeContext and reducers within components to handle theme changes and todo item updates.
+4. Utilize local storage to store and retrieve todo data using `localStorage` API.
 
-Implementation:
+**Benefits:**
 
-Create a ThemeContext using React.createContext() and define a ThemeProvider component to expose the theme context.
+1. Improved code organization and separation of concerns using context, reducers, and local storage.
+2. Enhanced user experience with a customizable theme.
+3. Persistent data storage for maintaining todo lists across sessions.
 
-Implement reducers using useReducer() to manage the todo list state.
+**Insights:**
 
-Use the ThemeContext and reducers within components to handle theme changes and todo item updates.
+- Context provides a centralized approach to managing global state, such as the application theme.
+- Reducers facilitate efficient state updates and ensure predictable state changes.
+- Local storage enables persistent data storage, preserving user data even after application reloads.
 
-Utilize local storage to store and retrieve todo data using localStorage API.
-
-Benefits:
-
-Improved code organization and separation of concerns using context, reducers, and local storage.
-
-Enhanced user experience with a customizable theme.
-
-Persistent data storage for maintaining todo lists across sessions.
-
-Insights:
-
-Context provides a centralized approach to managing global state, such as the application theme.
-
-Reducers facilitate efficient state updates and ensure predictable state changes.
-
-Local storage enables persistent data storage, preserving user data even after application reloads.
-
-Demonstration:
+**Demonstration:**
 
 Develop the enhanced todo application, incorporating context for theme management, reducers for global state management, and local storage for persistent data storage. Showcase the ability to change themes, add, remove, and toggle todo items, and maintain the todo list across page refreshes.
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

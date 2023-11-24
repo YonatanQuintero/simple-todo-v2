@@ -4,6 +4,7 @@ import TodoStats from "./TodoStats"
 import TodoInputAdd from "./TodoInputAdd"
 import TodoList from "./TodoList"
 import TodoClearDone from "./TodoClearDone"
+import ThemeToggle from "../theme/ThemeToggle"
 
 const TodoIndex = () => {
   const [todos, setTodos] = useState([])
@@ -70,6 +71,12 @@ const TodoIndex = () => {
           <div className="text-end mt-3">
             <TodoClearDone clearDone={clearDone} />
           </div>
+        </div>
+      </div>
+      <hr />
+      <div className="row justify-content-center">
+        <div className="col-sm-12 col-md-12 col-lg-12">
+          <ThemeToggle />
         </div>
       </div>
     </div>

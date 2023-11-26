@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+main{
+  min-height: 70vh !important;
+}
+
 .list-group {
 
   .list-group-item {
@@ -19,4 +23,8 @@ code {
       max-width: 80px !important;
     }
   }
+}
+
+.container-fluid {  
+  overflow-x: hidden;
 }

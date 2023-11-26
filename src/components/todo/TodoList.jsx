@@ -1,10 +1,13 @@
 import TodoListItem from "./TodoListItem"
+import { useTodoContext } from "../../context/TodoContext"
 
-const TodoList = ({ todos, toggleTodo, removeTodo }) => {
+const TodoList = () => {
+  const { state } = useTodoContext()
+
   return (
     <ul className="list-group">
-      {todos.map((todo) => (
-        <TodoListItem key={todo.id} id={todo.id} value={todo.value} toggleTodo={toggleTodo} removeTodo={removeTodo} />
+      {state.todos.map((todo) => (
+        <TodoListItem key={todo.id} id={todo.id} value={todo.value} />
       ))}
     </ul>
   )

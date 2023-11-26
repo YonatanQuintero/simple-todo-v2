@@ -1,5 +1,9 @@
 import TodoStatItem from "./TodoStatItem"
-const TodoStats = ({ total = 0, todo = 0, done = 0 }) => {
+import { useTodoContext } from "../../context/TodoContext"
+const TodoStats = () => {
+  const { state } = useTodoContext()
+  const { stats } = state
+  const { total, todo, done } = stats
   return (
     <div className="bg-info-subtle py-3 border-bottom border-1 border-black">
       <h1 className="text-center display-4 fw-bold text-white"></h1>

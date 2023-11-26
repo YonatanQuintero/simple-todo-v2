@@ -1,9 +1,13 @@
-const TodoClearDone = ({ clearDone }) => {
+import { useTodoContext } from "../../context/TodoContext"
+
+const TodoClearDone = () => {
+  const { clearDone } = useTodoContext()
   const clearDoneHandler = () => {
     clearDone()
   }
+
   return (
-    <button type="button" className="btn btn-info text-white" onClick={clearDoneHandler}>
+    <button type="button" className="btn btn-outline-info text-info" onClick={clearDoneHandler}>
       Clear Done
     </button>
   )

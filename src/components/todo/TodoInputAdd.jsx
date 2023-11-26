@@ -1,5 +1,8 @@
 import { useEffect, useState, useRef } from "react"
-const TodoInputAdd = ({ addTodo }) => {
+import { useTodoContext } from "../../context/TodoContext"
+
+const TodoInputAdd = () => {
+  const { addTodo } = useTodoContext()
   const inputRef = useRef(null)
   const [value, setValue] = useState("")
   const [isCompleted, setIsCompleted] = useState(false)

@@ -1,5 +1,8 @@
 import { useRef } from "react"
-const TodoListItem = ({ id, value, toggleTodo, removeTodo }) => {
+import { useTodoContext } from "../../context/TodoContext"
+
+const TodoListItem = ({ id, value }) => {
+  const { toggleTodo, removeTodo } = useTodoContext()
   const valueRef = useRef(null)
   const inputId = `todo-${id}`
 
